@@ -126,7 +126,7 @@ rule-providers:
   ProxyGFW: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/ProxyGFW.list}
 
 rules:
-  - IP-CIDR,172.31.1.0/24,home1,no-resolve
+  - IP-CIDR,172.31.1.0/24,特殊节点,no-resolve
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Github,微软服务
