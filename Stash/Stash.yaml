@@ -32,7 +32,17 @@ proxy-providers:
   #   url: https://app.mitce.com/?sid=203701&token=srvzdwcp
   #   benchmark-timeout: 5
   #   benchmark-url: http://1.1.1.1/generate_204
-
+ proxies:
+  - name: home
+    password: Qwe12345!
+    port: 57788
+    server: home.wenddy.top
+    type: socks5
+    username: clash
+    skip-cert-verify: false
+    tls: false
+    benchmark-timeout: 100
+    benchmark-url: http://www.baidu.com
 proxy-groups:
 
   # 分流分组
@@ -60,6 +70,8 @@ proxy-groups:
   - {name: Spotify, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
 
   - {name: 兜底分流, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/friestash.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
+  
+  - {name: 特殊节点, type: select, url: http://www.gstatic.com/generate_204, interval: 300, include-all: true, proxies: [home]}
 
   # 节点地区分流
 
@@ -73,7 +85,6 @@ proxy-groups:
 
   - {name: 台湾节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
   
-  - {name: 特殊节点, type: select, url: http://www.gstatic.com/generate_204, interval: 300, include-all: true, filter: "home"}
 rule-providers:
 
   # 局域网   
