@@ -71,7 +71,7 @@ proxy-groups:
 
   - {name: 兜底分流, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/friestash.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
   
-  - {name: 特殊节点, type: select, url: http://www.gstatic.com/generate_204, interval: 300, include-all: true, proxies: [home]}
+  # - {name: 特殊节点, type: select, url: http://www.gstatic.com/generate_204, interval: 300, include-all: true, proxies: [home]}
 
   # 节点地区分流
 
@@ -137,7 +137,7 @@ rule-providers:
   ProxyGFW: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/ProxyGFW.list}
 
 rules:
-  - IP-CIDR,172.31.1.0/24,特殊节点,no-resolve
+  # - IP-CIDR,172.31.1.0/24,特殊节点,no-resolve
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Github,微软服务
