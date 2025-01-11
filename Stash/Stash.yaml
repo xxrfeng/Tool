@@ -73,7 +73,7 @@ proxy-groups:
 
   - {name: 台湾节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
   
-  - {name: 特殊节点, type: select, benchmark-url: http://www.baidu.com, benchmark-timeout: 100, tls: false, skip-cert-verify: false, interval: 300, include-all: true, filter: "home"}
+  - {name: 特殊节点, type: select, benchmark-url: http://www.baidu.com, benchmark-timeout: 100, tls: false, skip-cert-verify: false, interval: 300, include-all: true, filter: "(?i)🇨🇳|中国|(\b(home)\b"}
 rule-providers:
 
   # 局域网   
