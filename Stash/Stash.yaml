@@ -83,7 +83,7 @@ proxy-groups:
 
   - {name: 日本节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)"}
 
-  - {name: 台湾节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan|home)\b)"}
+  - {name: 台湾节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan|中国)\b)"}
   
 rule-providers:
 
