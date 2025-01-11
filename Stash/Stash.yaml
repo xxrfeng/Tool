@@ -72,7 +72,8 @@ proxy-groups:
   - {name: 日本节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)"}
 
   - {name: 台湾节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
-
+  
+  - {name: home, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png, type: select, interval: 300, proxies: [Home]}
 rule-providers:
 
   # 局域网   
@@ -125,6 +126,7 @@ rule-providers:
   ProxyGFW: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/ProxyGFW.list}
 
 rules:
+  - IP-CIDR,172.31.1.0/24,home,no-resolve
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Github,微软服务
