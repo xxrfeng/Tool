@@ -32,17 +32,17 @@ proxy-providers:
   #   url: https://app.mitce.com/?sid=203701&token=srvzdwcp
   #   benchmark-timeout: 5
   #   benchmark-url: http://1.1.1.1/generate_204
- proxies:
-  - name: home
-    password: Qwe12345!
-    port: 57788
-    server: home.wenddy.top
-    type: socks5
-    username: clash
-    skip-cert-verify: false
-    tls: false
-    benchmark-timeout: 100
-    benchmark-url: http://www.baidu.com
+ # proxies:
+ #  - name: home
+ #    password: Qwe12345!
+ #    port: 57788
+ #    server: home.wenddy.top
+ #    type: socks5
+ #    username: clash
+ #    skip-cert-verify: false
+ #    tls: false
+ #    benchmark-timeout: 100
+ #    benchmark-url: http://www.baidu.com
 proxy-groups:
 
   # 分流分组
