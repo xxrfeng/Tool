@@ -24,7 +24,7 @@ subscribe-url:
 proxy-providers:
   Subscribe1:
     interval: 86400
-    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Stash
+    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/collection/all
     # benchmark-timeout: 5
     # benchmark-url: http://www.gstatic.com/generate_204
   # Subscribe2:
