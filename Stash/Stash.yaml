@@ -22,11 +22,16 @@ subscribe-url:
 
 # > 远程服务器
 proxy-providers:
-  Subscribe:
+  Subscribe1:
     interval: 86400
-    url: http://your-service-provider
+    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Stash
     benchmark-timeout: 5
     benchmark-url: http://1.1.1.1/generate_204
+  # Subscribe2:
+  #   interval: 86400
+  #   url: https://app.mitce.com/?sid=203701&token=srvzdwcp
+  #   benchmark-timeout: 5
+  #   benchmark-url: http://1.1.1.1/generate_204
 
 proxy-groups:
 
